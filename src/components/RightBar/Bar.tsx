@@ -1,5 +1,6 @@
 import Balance from "./Balance"
 import Card from "./Cards/Card"
+import SendMoney from "./SendMoney/SendMoney"
 import TopBar from "./TopBar"
 
 
@@ -10,6 +11,7 @@ const Bar = () => {
         <Balance />
         <hr />
         <Card />
+        <SendMoney />
     </div>
   )
 }
