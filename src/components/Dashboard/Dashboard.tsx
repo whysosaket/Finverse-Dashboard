@@ -8,9 +8,15 @@ import { HiOutlineSupport } from "react-icons/hi";
 import { LuGlobe } from "react-icons/lu";
 import Icon from "../../assets/icon.jpg";
 
+import {motion} from "framer-motion";
+
 const Dashboard = () => {
   return (
-    <div className="px-4 h-screen py-8 flex flex-col justify-between align-middle">
+    <motion.div
+    initial={{ x: -200, opacity: 0, scale: 1 }}
+    animate={{ x: 0, opacity: 1, scale: 1 }}
+    transition={{ duration: 0, delay: 0.1 }}
+    className="a px-4 h-screen py-8 flex flex-col justify-between align-middle">
         <div className="flex flex-col gap-4">
         <div className="h-12 w-12">
             <img src={Icon} className="w-full rotate-45" />
@@ -52,7 +58,7 @@ const Dashboard = () => {
           Community
         </h4>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
