@@ -32,15 +32,15 @@ function App() {
       </div>
     </>
   ) : (
-    <div className="flex font-inter">
+    <div className="md:flex font-inter">
       <Hireme />
-      <div className="w-2/12 min-h-screen bg-white">
+      <div className="md:w-2/12 md:min-h-screen bg-white">
         <Dashboard />
       </div>
-      <div className="w-7/12 min-h-screen bg-gray-50">
+      <div className="md:w-7/12 min-h-screen bg-gray-50">
         <CenterBar />
       </div>
-      <div className="w-3/12 min-h-screen bg-gray-100/80">
+      <div className="md:w-3/12 min-h-screen bg-gray-100/80">
         <Bar />
       </div>
     </div>
