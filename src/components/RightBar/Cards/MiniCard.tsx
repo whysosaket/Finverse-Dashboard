@@ -1,6 +1,6 @@
 const MiniCard = () => {
   return (
-    <div className="flex justify-between px-6 bg-gray-200/60 rounded-2xl">
+    <div className="flex justify-between px-6 bg-gray-200/60 rounded-2xl shadow-black/10 shadow-lg">
         <h1 className="my-auto">$21,000.00</h1>
         <div className="flex justify-center align-middle">
             <h1 className="my-auto mr-4 text-black/60">**** 4423</h1>
