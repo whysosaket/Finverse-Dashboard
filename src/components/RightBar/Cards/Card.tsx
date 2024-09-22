@@ -1,3 +1,4 @@
+import MiniCard from "./MiniCard";
 import Visa from "./Visa"
 import { FaPlus } from "react-icons/fa6";
 
@@ -14,6 +15,7 @@ const Card = () => {
             </div>
         </div>
         <Visa />
+        <MiniCard />
     </div>
   )
 }
