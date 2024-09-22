@@ -32,8 +32,11 @@ const Dashboard = () => {
         className="a px-4 h-screen py-8 md:flex flex-col justify-between align-middle hidden"
       >
         <div className="flex flex-col gap-4">
+          <div className="flex gap-2 align-middle">
           <div className="h-12 w-12">
-            <img src={Icon} className="w-full rotate-45" />
+            <img src={Icon} className="w-full rotate-45 my-auto" />
+          </div>
+          <h1 className="my-auto font-gowun text-xl">FINVERSE</h1>
           </div>
           <div className="flex flex-col gap-4">
             <h4 className="flex gap-1 justify-start align-middle text-gray-800">
