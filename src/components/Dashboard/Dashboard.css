@@ -1,0 +1,21 @@
+.h{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 70px;
+    margin-top: 70px;
+}
+.he, .hell{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 70px;
+}
+.hel{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 70px;
+    margin-top: 250px;
+}
+.vertical-line {
+    border-left: 2px solid grey;
+    height: 90vh;
+    position: absolute; 
+    left: 250px; 
+    top: 30px;
+}
