@@ -1,8 +1,31 @@
+import { useEffect, useState } from "react";
+
 const Visa = () => {
+  const [dimensions, setDimensions] = useState({
+    width: window.innerWidth,
+    height: window.innerHeight,
+  });
+
+  useEffect(() => {
+    const handleResize = () => {
+      setDimensions({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
   return (
     <>
       <div className="md:-ml-6">
-        <div className="w-96 h-56 my-4 md:my-auto md:m-auto shadow-black/30 bg-black rounded-xl relative text-white shadow-2xl transition-transform transform md:scale-[0.85]">
+        <div
+        style={{width: dimensions.width/1440*384}}
+        className="w-96 h-56 my-4 md:my-auto md:m-auto shadow-black/30 bg-black rounded-xl relative text-white shadow-2xl transition-transform transform md:scale-[0.85]">
           <img
             className="relative object-cover w-full h-full rounded-xl opacity-70"
             src="https://i.imgur.com/kGkSg1v.png"
